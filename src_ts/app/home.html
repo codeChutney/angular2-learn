@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	
+	<body>
+		<nav>
+			<div class="nav-wrapper blue darken-4">
+				<a href="#" class="brand-logo">NG2 Learning</a>
+				<ul id="navMobile" class="right hide-on-med-and-down">
+					<li><a [router-link]="['/Registration']">Registration</a></li>
+					<li><a [router-link]="['/LogOut']">Log Out</a></li>
+					<li><a [router-link]="['/CustomEvent']">Events</a></li>
+				</ul>
+			<div>
+		</nav>	
+		<div class="container">
+			<router-outlet></router-outlet>
+		</div>
+	</body>
+</html>

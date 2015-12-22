@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<base href="/src_ts/"/>
+		<script src="../node_modules/systemjs/dist/system.src.js"></script>
+		<script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+		<script src="../node_modules/angular2/bundles/router.dev.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+		<script>
+			//The packages node tells SystemJS what to do when it sees a request for a module from the app/ folder. 
+			System.config({
+				packages: {'js': {defaultExtension: 'js'}}
+			});
+			//The System.import call tells SystemJS to import the boot file
+			System.import('js/boot').catch(console.log.bind(console));
+		</script>
+	</head>
+	
+	<body>
+		<base-component-selector>Wait for it....</base-component-selector>
+	</body>
+</html>
